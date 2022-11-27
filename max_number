@@ -1,0 +1,11 @@
+highest_number = ''
+while True:
+    my_new_number = (input())
+    if my_new_number == "Stop":
+        break
+    if highest_number == '':
+        highest_number = my_new_number
+    if int(my_new_number) > int(highest_number):
+        highest_number = my_new_number
+
+print(highest_number)
